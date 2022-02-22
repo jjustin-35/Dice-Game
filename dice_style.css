@@ -1,0 +1,126 @@
+html, body{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+.topBar{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    /* height: 100%; */
+    box-sizing: border-box;
+    padding: 10px;
+    border: white solid 2px;
+    align-items: stretch;
+}
+.playFrame{
+    margin:5px;
+    box-sizing: border-box;
+    width: 30%;
+    flex:0 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+.explanBox{
+    box-sizing: border-box;
+    padding: 10px;
+    border: white solid 2px;
+}
+p{
+    font-size: 20px;
+}
+.guessBox{
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: white solid 2px;
+    height: 100%;
+}
+h2{
+    text-align: center;
+}
+.btnBox{
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+}
+.btn{
+    margin-top: 10px;
+    flex:auto;
+    font-weight: bold;
+}
+#deposit{
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.resultFrame{
+    box-sizing: border-box;
+    margin: 5px;
+    flex:auto;
+    display: flex;
+    flex-direction: column;
+}
+.mainResult{
+    border: white solid 2px;
+    padding: 10px;
+    height: 100%;
+}
+img{
+    display:block;
+    /* 原為inline，需換成block才可變成可置中的區塊 */
+    margin: auto;
+}
+.dice{
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin:15px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.result{
+    text-align: center;
+    font-size: 20px;
+}
+.fundation{
+    display: flex;
+    margin-top: 10px;
+}
+.mobileFun{
+    display: none;
+    margin-bottom: 10px;
+}
+.name{
+    margin-right: 10px;
+    padding: 5px;
+    width: 30%;
+    font-size: 20px;
+    border: white solid 2px;
+    text-align: center;
+}
+.money{
+    flex: auto;
+    padding: 5px;
+    font-size: 20px;
+    border: white solid 2px;
+}
+
+@media (max-width:550px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .playFrame{
+        width: 100%;
+    }
+    .mobileFun{
+        display: flex;
+    }
+    .fundation{
+        display: none;
+    }
+}

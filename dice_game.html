@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice Game</title>
+        <link rel="stylesheet" href="dice_style.css" type="text/CSS">
+    </head>
+    
+    <body>
+         <h1 class="topBar">來玩骰子遊戲！</h1>
+         <div class="main">
+             <div class="playFrame">
+                <div class="mobileFun">
+                    <div id="name1" class="name">王曉明</div>
+                    <div id="money1" class="money">您的籌碼：10000</div>
+                 </div>
+                 <div class="explanBox">
+                    <h2 >來猜大小吧！</h2>
+                    <p>
+                        規則:<br>
+                        選擇大/小，並下注押金，系統會骰三顆骰子，如果結果大於9，則為大；小於9則為小。
+                        玩家贏了的話，可以獲得兩倍押金；輸的話押金沒收。
+                    </p>
+                 </div>
+                 <div class="guessBox">
+                     <h2>比大小</h2>
+                     <div class="btnBox">
+                         <button class="btn" id="bigBtn">大</button>
+                         <button class="btn" id="smallBtn">小</button>
+                     </div>
+                    <p id="answer">您選擇的是：</p>
+                    <label for="deposit">請輸入押金</label>
+                    <input 
+                    type="number" 
+                    name="deposit" 
+                    id="deposit" 
+                    min="1"
+                    value="1000" 
+                    required>
+                    <button id="depositBtn" class="Btn">提交</button>
+                    <p id="allMoney"></p>
+                     
+
+                 </div>
+             </div>
+             <div class="resultFrame">
+                 <div class="mainResult">
+                     <h2>骰骰子囉！</h2>
+                     <img src="saikoro_3set.png" alt="骰子" width="300px" height="300px">
+                     <button id="dice" class="dice">開始骰！</button>
+                     <div id="result">
+                         <div class="result">骰子的結果：</div>
+                         <div class="result">大小為：</div>
+                         <div class="result">您輸了！共賠了100元</div>
+                     </div>
+                 </div>
+                 <div class="fundation">
+                    <div id="name2" class="name">王曉明</div>
+                    <div id="money2" class="money">您的籌碼：10000</div>
+                 </div>
+             </div>
+         </div>
+         <script src="dice game.js"></script>
+    </body>
+</html>
