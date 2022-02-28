@@ -14,10 +14,10 @@ let chips1 = document.getElementById('money1')
 let chips2 = document.getElementById('money2')
 
 // 要記得prompt是input功能
-let inputName = '陳子瑜'// prompt('請輸入姓名')
+let inputName = prompt('請輸入姓名')
 while (true) {
     if (inputName === "") {
-        inputName = '輸入名子'//prompt('請輸入姓名')
+        inputName = prompt('請輸入姓名')
     }else{break}
 }
 //傳入名字
